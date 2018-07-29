@@ -62,7 +62,10 @@ Assuming the above is complete, you can get started below.
 ```
       python ttp0_drone.py configure
 ```
-
+## Run DRONE ( ensure you ran configure as shown in YOUTUBE VIDEO )
+```
+     python ttp0_drone.py run
+```
 
 # DRONE FRAMEWORK WIKI
 The custom framework that is driven from the U.S. CERT Incident Categorization is represented in the **TTPO DRONE WIKI**
