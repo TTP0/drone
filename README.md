@@ -15,7 +15,7 @@ Term   |  Purpose
 # TTP0 - DRONE by @DFIRENCE
 
 > "The DRONE script is a tool to deliver the usage of a custom workflow used for cyber security operations, and specifically
-> the use by security teams to manage incidents with a platform neutral approach where security practitioners can be enabled to achieve rather than constraining them to limitations due to a product's limitation.
+> the use by security teams to manage incidents with a platform neutral approach where security practitioners can be enabled to achieve rather than stalling them with limitations due to a product's constraint.
 " -@dfirence
 
 As of today, DRONE leverages the powerful open source project called "**TheHive**" as an example of using the DRONE workflow.
@@ -35,3 +35,17 @@ managing demand and work efforts (e.g., Ajira, ServiceNow, Remedy, etc.)
 * You have installed a working instance of the CERT-BDF TheHive incident management platform - [TheHive Project](https://github.com/TheHive-Project/TheHive)
 
 * We **highly suggest** you to watch this overview of the TTP0 DRONE before you start - [TTP0 DRONE Video](https://youtu.be/zoItQ1KFb2o) 
+
+
+# GETTING STARTED
+
+Assuming the above is complete, you can get started below.
+
+## Clone This Repo
+```
+      git clone https://github.com/TTP0/drone.git
+```
+## Install Dependencies
+```
+      pip install -r ttp0-drone-requirements.txt
+```
