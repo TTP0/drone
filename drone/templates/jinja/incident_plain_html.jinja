@@ -1,0 +1,459 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--[if gte mso 9]>
+			<style type="text/css">
+			/* Your Outlook-specific CSS goes here. */
+
+				h3 {
+					border-radius: 20px;
+					background-color: #2460A6;
+					color: white;
+					padding-bottom: 100px;
+					padding-top: 10px;
+				}
+			</style>
+		<![endif]-->
+	</head>
+	<body>
+		<table>
+			<tbody>
+				<tr>
+					<td colspan="2" width="623">
+						<h3 align="center"><strong>TTP0 SECURITY INCIDENT NOTIFICATION</strong></h3>
+						<br>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Number</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="390">
+						<p>{{ sin }}</p>
+					</td>
+				</tr>
+				<tr>
+					 <td width="234">
+						<p><strong>Incident Category</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>{{ cat }}</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Type</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="600">
+						<p>{{ type }}</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Severity</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="390">
+						<p>{{ severity }}&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Affected Zone</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="390">
+						<p>{{ zone }}</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Affected Tier</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="390">
+						<p>{{ tier }}&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Affected Agency</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="390">
+						<p>{{ agency }}&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Notification DateTime</strong>
+						</p>
+					</td>
+					<td style="text-align: left;" width="390">
+						<p>{{ time }}&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>&nbsp;</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>&nbsp;</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>Incident Overview</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>{{ overview }}</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>&nbsp;</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td width="234">
+						<p><strong>&nbsp;</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" width="623">
+						<h3 style="text-align: center;"><strong>INCIDENT DETAILS</strong></h3>
+						<br>
+						<br>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>FQDN Domains</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for fqdn in DOMAIN_VALUES %}
+					{% if fqdn.lower() in PRIVATE_ORG_DOMAINS %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ fqdn.replace('.','[.]').upper() }}</p>
+							</td>
+							<td width="390">
+								<p></p>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ fqdn.replace('.','[.]').upper() }}</p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://urlscan.io/domain/{0}".format(fqdn) }}>URLSCAN.IO</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.talosintelligence.com/reputation_center/lookup?search={0}".format(fqdn) }}>SENDERBASE</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.virustotal.com/en/domain/{0}/information".format(fqdn) }}>VIRUSTOTAL</a></p>
+							</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>URL Domains</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for url in URL_VALUES %}
+					{% if url.lower() in PRIVATE_ORG_DOMAINS %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ url.replace(':','[:]').replace('.','[.]').upper() }}</p>
+							</td>
+							<td width="390">
+								<p></p>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ url.replace(':','[:]').replace('.','[.]').upper() }}</p>
+							</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>LDAP Users</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for user in USER_VALUES %}
+				<tr>
+					<td width="234">
+						<p>&nbsp;</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;{{ user.upper() }}</p>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>LDAP Hostnames</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for hostname in HOSTNAME_VALUES %}
+				<tr>
+					<td width="234">
+						<p>&nbsp;</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;{{ hostname.upper() }}</p>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>Source IP Addresses</strong></p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for src_ip in SRC_IP_VALUES %}
+					{% if src_ip in PRIVATE_IPS_RFC1918 %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ src_ip }}</p>
+							</td>
+							<td width="390">
+								<p></p>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ src_ip }}</p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://urlscan.io/ip/{0}".format(src_ip) }}>URLSCAN.IO</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.talosintelligence.com/reputation_center/lookup?search={0}".format(src_ip) }}>SENDERBASE</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.virustotal.com/#/ip-address/{0}".format(src_ip) }}>VIRUSTOTAL</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.abuseipdb.com/check/{0}".format(src_ip) }}>ABUSE-IP-DB</a></p>
+							</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>Destination IP Addresses</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for dst_ip in DST_IP_VALUES %}
+					{% if dst_ip in PRIVATE_IPS_RFC1918 %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ dst_ip }}</p>
+							</td>
+							<td width="390">
+								<p></p>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td width="234">
+								<p></p>
+							</td>
+							<td>
+								<p>{{ dst_ip }}</p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://urlscan.io/ip/{0}".format(dst_ip) }}>URLSCAN.IO</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.talosintelligence.com/reputation_center/lookup?search={0}".format(dst_ip) }}>SENDERBASE</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.virustotal.com/#/ip-address/{0}".format(dst_ip) }}>VIRUSTOTAL</a></p>
+							</td>
+							<td width="125">
+								<p><a href={{ "https://www.abuseipdb.com/check/{0}".format(dst_ip) }}>ABUSE-IP-DB</a></p>
+							</td>
+						</tr>
+					{% endif %}
+				{% endfor %}
+			</tbody>
+		</table>
+		<table id="file_hashes">
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>File Hashes</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for hash in HASH_VALUES %}
+					<tr>
+						<td width="234">
+							<p>&nbsp;</p>
+						</td>
+						<td width="500">
+							<p>&nbsp;{{ hash.upper() }}</p>
+						</td>
+						<td width="150">
+							<p>&nbsp;<a href={{ "https://www.virustotal.com/#/file/{0}".format(hash.upper()) }}>VIRUSTOTAL</a></p>
+						</td>
+						<td width="125">
+							<p>&nbsp;<a href={{ "https://metadefender.opswat.com/results#!/file/{0}/hash/overview".format(hash.upper()) }}>OPSWAT</a></p>
+						</td>
+						<td width="100">
+							<p>&nbsp;<a href={{ "https://www.hybrid-analysis.com/search?query={0}".format(hash.upper()) }}>HA</a></p>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>Email Senders</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for email_sender in EMAIL_SENDER_VALUES %}
+					<tr>
+						<td width="234">
+							<p>&nbsp;</p>
+						</td>
+						<td width="390">
+							<p>&nbsp;{{ email_sender.replace('@','[@]').replace('.','[.]').upper() }}</p>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<td width="234">
+						<p><strong>Email Recipients</strong>
+						</p>
+					</td>
+					<td width="390">
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				{% for email_recipient in EMAIL_RECIPIENT_VALUES %}
+					<tr>
+						<td width="234">
+							<p>&nbsp;</p>
+						</td>
+						<td width="390">
+							<p>&nbsp;{{ email_recipient.replace('@','[@]').replace('.','[.]').upper() }}</p>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</body>
+</html>

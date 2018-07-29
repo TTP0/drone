@@ -1,0 +1,11 @@
+click
+colorama==0.3.7
+Jinja2==2.9.6
+prompt-toolkit==1.0.14
+pygal==2.4.0
+Pygments==2.2.0
+requests==2.18.1
+selenium==3.5.0
+tabulate==0.7.7
+tinydb==3.8.1.post1
+iptools==0.6.1
