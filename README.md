@@ -1,6 +1,8 @@
 # What is TTP0 DRONE
-It is an acronym based on the TTP0 approach to key focus areas of the Security Operations (SecOps) world.  The intent of
-DRONE is to immediately help you:
+It is an operational acronym based on the TTP0 approach to key focus areas of the Security Operations (SecOps) world.  
+This operational acronym is specific to cyber security **Incident Management**.
+
+The intent of DRONE is to immediately help you:
 
 
 Term   |  Purpose
@@ -8,8 +10,7 @@ Term   |  Purpose
 **D**efine |Your opertional criteria, its context, priorities, impact, and data of interest (OSINT, IoC, Observables)
 **R**educe | The frustration of not knowing where to start regardless of your team's size, and minimize data entry errors
 **O**utline |Outline fundamental key measurements to account for **good security work** to scale services & team size
-**N**otify  |Provide effective communication of incidents between practitioners, business leaders with the necessary 
-context
+**N**otify  |Provide effective communication of incidents between practitioners, business leaders with the necessary context
 **E**nable  | Your focus on leading people and growing their skills while minimizing the burden of creating the basics
 
 
@@ -54,6 +55,10 @@ Assuming the above is complete, you can get started below.
 ```
       git clone https://github.com/TTP0/drone.git
 ```
+## Navigate TO App Directory
+```
+    cd drone
+```
 ## Install Dependencies
 ```
       pip install -r ttp0-drone-requirements.txt
@@ -68,9 +73,9 @@ Assuming the above is complete, you can get started below.
 ```
 
 # DRONE FRAMEWORK WIKI
-The custom framework that is driven from the U.S. CERT Incident Categorization is represented in the **TTPO DRONE WIKI**
+The custom framework that is driven from the U.S. CERT Incident Categorization is represented in the **TTP0 DRONE WIKI**
 
-# FUTURE ROADMAP
+# FUTURE ROADMAP - FEATURES & DOCUMENTATION
 Priority | Feature
 ---------|-----------
 P1 | Email Support for Linux, Windows
