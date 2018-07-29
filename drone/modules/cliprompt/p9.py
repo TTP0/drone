@@ -1,9 +1,5 @@
 #coding: utf-8
 
-__author__  = "@DFIRENCE | CARLOS DIAZ"
-__version__ = "0.0.1"
-__license__ = "MIT"
-
 from __future__ import unicode_literals
 from prompt_toolkit import prompt
 from prompt_toolkit.history import InMemoryHistory
