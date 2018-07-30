@@ -36,7 +36,9 @@ The TTP0 DRONE is a **WIP** (Work In Progress) being matured into different main
 managing demand and work efforts (e.g., Ajira, ServiceNow, Remedy, etc.)
 
 ***
-# CODING INCIDENTS WITH TTP0 DRONE & TheHive
+# RECORDING INCIDENTS WITH TTP0 DRONE & TheHive
+
+> We are providing a clean information design that can be integrated general platforms for incident management
 
 [![TTP DRONE](https://i.imgur.com/agn5kch.png)](https://i.imgur.com/agn5kch.png "TTP0 DRONE & TheHive")
 
