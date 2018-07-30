@@ -95,6 +95,7 @@ Priority | Feature
 ---------|-----------
 P1 | Email Support for Linux, Windows
 P1 | Framework Documentation Wiki
+P1 | Ansible Playbook for TTP0 - TheHive Deployment (Debian, Arch, CENTOS)
 P2 | Custom SOC Incident Reporting Template
 P2 | Local Case Manager released from private codebase
 P3 | Integrations with Commodity APIs
