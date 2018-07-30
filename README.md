@@ -16,7 +16,7 @@ Term   |  Purpose
 
 # TTP0 - DRONE by @DFIRENCE
 
-> "The DRONE script is a tool to deliver the usage of a custom workflow used for cyber security operations, and 
+> "The TTP0 DRONE is resource to deliver the usage of a custom workflow used for cyber security operations, and 
 specifically
 > the use by security teams to manage incidents with a platform neutral approach where security practitioners can be 
 enabled to achieve rather than stalling them with limitations due to a product's constraint.
