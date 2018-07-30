@@ -44,7 +44,7 @@ managing demand and work efforts (e.g., Ajira, ServiceNow, Remedy, etc.)
 
 ### Use the Command Line and the Observables MiniShell
 
-BY TYPE | WITH CONTEXT | WITH DATA
+BY TYPE | WITH CONTEXT | PLUS RICH DATA
 --------|--------------|-----------------------------
 [![TTP0 DRONE FRAMEWORK](https://i.imgur.com/vETHUSc.png)]([Imgur](https://i.imgur.com/vETHUSc.png "Incident Categorization")|[![TTP0 DRONE CONTEXT](https://i.imgur.com/oDSnrDN.png)](https://i.imgur.com/oDSnrDN.png "Context")|[![TTP0 DRONE OBSERVABLES](https://i.imgur.com/hTbFeuT.png)](https://i.imgur.com/hTbFeuT.png "Observables")
 
