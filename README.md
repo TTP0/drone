@@ -38,9 +38,13 @@ managing demand and work efforts (e.g., Ajira, ServiceNow, Remedy, etc.)
 ***
 # RECORDING INCIDENTS WITH TTP0 DRONE & TheHive
 
-> We are providing a clean information design that can be integrated general platforms for incident management
+### Use TheHive Incident Management Platform with TTP0 DRONE
 
 [![TTP DRONE](https://i.imgur.com/agn5kch.png)](https://i.imgur.com/agn5kch.png "TTP0 DRONE & TheHive")
+
+### Use the Command Line and the Observables MiniShell
+
+[![TTP0 DRONE FRAMEWORK](https://i.imgur.com/vETHUSc.png)]([Imgur](https://i.imgur.com/vETHUSc.png "Incident Categorization")
 
 # BEFORE YOU START
 
