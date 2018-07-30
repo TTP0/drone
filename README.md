@@ -21,15 +21,15 @@ specifically
 > the use by security teams to manage incidents with a platform neutral approach where security practitioners can be 
 enabled to achieve rather than stalling them with limitations due to a product's constraint.
 " -@dfirence
+***
 
 As of today, DRONE leverages the powerful open source project called "**TheHive**" as an example of using the DRONE 
 workflow.
 
 The intent of **DRONE is to remain agnostic to a product or platform**, it is focused on the technique(s) and procedure(s) 
-that are
-important when managing an operational group and its services from the ground up.  By technique and procedure we refer to 
-the information design applied to the 
-subject of incident management.  The design is carefully considerate of providing a solid state of awareness of how an 
+that are important when managing an operational group and its services from the ground up.  By technique and procedure we refer to the **information design** applied to the subject of incident management.  
+
+The design is carefully considerate of providing a solid state of awareness of how an 
 incident may affect an organization, its people and systems used for either general or critical business efforts.
 
 The TTP0 DRONE is a **WIP** (Work In Progress) being matured into different main stream platforms that can be used for
