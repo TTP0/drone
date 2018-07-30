@@ -35,6 +35,10 @@ incident may affect an organization, its people and systems used for either gene
 The TTP0 DRONE is a **WIP** (Work In Progress) being matured into different main stream platforms that can be used for
 managing demand and work efforts (e.g., Ajira, ServiceNow, Remedy, etc.)
 
+***
+# CODING INCIDENTS WITH TTP0 DRONE & TheHive
+
+[![TTP DRONE](https://i.imgur.com/agn5kch.png)](https://i.imgur.com/agn5kch.png "TTP0 DRONE & TheHive")
 
 # BEFORE YOU START
 
@@ -73,7 +77,7 @@ Assuming the above is complete, you can get started below.
 ```
 
 # DRONE FRAMEWORK WIKI
-The custom framework that is driven from the U.S. CERT Incident Categorization is represented in the **TTP0 DRONE WIKI**
+The custom framework that is driven from the U.S. CERT Incident Categorization is represented in the [**TTP0 DRONE WIKI**](https://github.com/TTP0/drone/wiki/OVERVIEW)
 
 # FUTURE ROADMAP - FEATURES & DOCUMENTATION
 Priority | Feature
