@@ -7,11 +7,11 @@ The intent of DRONE is to immediately help you:
 
 Term   |  Purpose
 ---------------|----------------------------
-**D**efine |Your opertional criteria, its context, priorities, impact, and data of interest (OSINT, IoC, Observables)
-**R**educe | The frustration of not knowing where to start regardless of your team's size, and minimize data entry errors
-**O**utline |Outline fundamental key measurements to account for **good security work** to scale services & team size
-**N**otify  |Provide effective communication of incidents between practitioners, business leaders with the necessary context
-**E**nable  | Your focus on leading people and growing their skills while minimizing the burden of creating the basics
+**D***efine* |Your opertional criteria, its context, priorities, impact, and data of interest (OSINT, IoC, Observables)
+**R***educe* | The frustration of not knowing where to start regardless of your team's size, and minimize data entry errors
+**O***utline* |Outline fundamental key measurements to account for **good security work** to scale services & team size
+**N***otify*  |Provide effective communication of incidents between practitioners, business leaders with the necessary context
+**E***nable*  | Your focus on leading people and growing their skills while minimizing the burden of creating the basics
 
 
 # TTP0 - DRONE by @DFIRENCE
