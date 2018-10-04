@@ -43,16 +43,16 @@ def render(cirt):
                                         '192.168.0.1/16'
                                 ),
         PRIVATE_ORG_DOMAINS = (
-            'hqad.mtahq.org'    ,
-            'mtahq.org'         ,
-            'mtabt.org'         ,
-            'nyct.com'          ,
-            'lirr.org'          ,
-            'mnr.org'           ,
-            'mtabsc.org'        ,
-            'transit.nyct.com'  ,
-            'lirrad.lirr.org'   ,
-            'pdad.mta-pd.org'
+            'acme.org'    ,
+            'kitty.org'         ,
+            'xmen.org'         ,
+            'venom.com'          ,
+            'spiderman.org'          ,
+            'superman.org'           ,
+            'rip.org'        ,
+            'aspect.com'  ,
+            'sensus.org'   ,
+            'styleit.org'
         )
     )
 	cirt.sin['template'] = t
