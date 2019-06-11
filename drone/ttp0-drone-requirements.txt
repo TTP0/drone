@@ -1,6 +1,6 @@
 click
 colorama==0.3.7
-Jinja2==2.9.6
+Jinja2==2.10.1
 prompt-toolkit==1.0.14
 pygal==2.4.0
 Pygments==2.2.0
