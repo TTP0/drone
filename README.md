@@ -1,3 +1,13 @@
+# TTP0 CLOSING IN 90 DAYS - 2020
+
+This repo and its organization will be closing and thank you to all who supported us.  DRONE will be deprecated and likely moved to its author's repo `@dfirence`.  
+
+If you found this tool useful and would like to have it available, feel free to open an issue in this repo before it is closed.
+
+<br />
+<br />
+<br />
+
 # What is TTP0 DRONE
 It is an operational acronym based on the TTP0 approach to key focus areas of the Security Operations (SecOps) world.  
 This operational acronym is specific to cyber security **Incident Management**.
